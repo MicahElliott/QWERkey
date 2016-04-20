@@ -58,7 +58,7 @@ keysym i = i I asterisk    End
 keysym o = o O mu
 keysym p = p P bar backslash
 keysym bracketleft = slash question backslash
-keysym bracketright = BackSpace mu mu BackSpace
+keysym bracketright = BackSpace BackSpace mu BackSpace
 
 !!! ASDFGHJKL
 ! asdf
@@ -90,7 +90,9 @@ keysym comma = comma mu Down
 !keysym period = period greater grave
 
 ! The period is a hack since you'll often press space-period ending a sentence
-keysym space = space underscore space 0
+keysym space = space underscore period 0
+! keysym space = space underscore space 0
+! keysym space = space
 
 ! Need to be able to use Ctrl on most of these
 keysym 1 = 1 exclam      Home

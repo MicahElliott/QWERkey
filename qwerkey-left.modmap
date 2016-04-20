@@ -1,0 +1,99 @@
+! -*- mode: conf-xdefaults -*-
+
+clear mod2
+clear mod3
+clear lock
+
+remove Lock = Caps_Lock
+keysym Caps_Lock = Control_L
+add    Control = Control_L
+keycode 66 = Control_L
+!keycode 49 = Escape
+
+! Make original ; into a control
+! keycode 47 = Hyper_L
+! remove mod4 = Hyper_L
+! add control = Hyper_L
+keycode 47 = Control_R
+remove mod4 = Control_R
+add control = Control_R
+
+! Hard-to-reach original Ctrl is CapsLock
+keycode 37 = Caps_Lock
+
+! . is our fancy symbol modifier!
+! keysym period = period greater
+keycode 23 = Mode_switch
+! keycode any = colon
+keysym Pause = colon
+keysym Print = bracketleft
+keysym Num_Lock = bracketright
+keycode any = Tab
+remove mod4 = Hyper_L
+!add Mode_switch = Hyper_L
+!remove mod4 = Hyper_L
+!add Mod3 = Hyper_L Hyper_R
+!add Mod2 = Hyper_L Hyper_R
+! Make slash (61) into a right-shift
+
+keycode 61 = Hyper_R
+!remove something = Hyper_R
+add Shift = Hyper_R
+
+! Compose multibyte dead sequence: Comp ~ n → ñ
+! keycode 135 = Multi_key
+! keycode 93 = Multi_key
+keycode 105 = Multi_key
+! keycode 135 = bracketright
+keycode 135 = Super_R
+
+!keycode 133 = bracketleft
+
+
+!remove  eee eee
+
+! Use "mu" to represent "unknown"
+
+!!! QWERTYUIOP
+! dead sym: C-!
+keysym q = q Q exclam
+keysym w = w W at
+keysym e = e E numbersign
+keysym r = r R dollar
+keysym t = t T percent
+keysym y = y Y asciicircum 0
+keysym u = u U ampersand   1
+keysym i = i I asterisk    2
+! *o*r
+keysym o = o O asciitilde  3
+keysym p = p P plus
+!keycode 34 = slash question bracketleft
+keycode 34 = slash question backslash
+keycode 35 = BackSpace BackSpace BackSpace BackSpace
+
+!!! ASDFGHJKL
+! asdf
+keysym a = a A Left
+keysym s = s S Up
+keysym d = d D Right
+keysym f = f F Prior
+keysym g = g G Home
+keysym h = h H less
+! ; looks like a j
+keysym j = j J braceleft 4
+keysym k = k K equal     5
+keysym l = l L bar       6
+keysym apostrophe = apostrophe quotedbl grave
+
+!!! ZXCVBNM
+keysym z = z Z Down
+keysym x = x X
+keysym c = c C Delete
+keysym v = v V Next
+keysym b = b B End
+keysym n = n N greater
+keysym m = m M braceright            7
+keysym comma = comma less semicolon  8
+keysym period = period greater period 9
+
+keysym space = space underscore underscore
