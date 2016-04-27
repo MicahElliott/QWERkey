@@ -16,7 +16,7 @@ All of this is accomplished by a few novelties:
 
  * an arrangement of left-modifiers that can be pressed in
    combinations of two or three by forming a comfortable guitar-like
-   barre
+   pinky barré
 
  * extensive use of [xcape](https://github.com/alols/xcape) for
    doubling modifier keys, greatly reducing the number of keys needed
@@ -98,9 +98,9 @@ Microsoft.  Please let me know if you want to work on a driver.
 
 The diagram above shows keys (in red) for managing a TWM.  If you're
 someone who cares a lot about layouts and sees value in minimizing
-mouse usage, you need a TWM -- for both speed and comfort.  I like i3
-for its simple textual config format and light-weightedness, but
-have also had good trials with
+mouse usage, you need a TWM -- for both speed and comfort.  I like
+[i3](https://i3wm.org/) for its simple textual config format and
+light-weightedness, but have also had good trials with
 [AwesomeWM](https://awesome.naquadah.org/) and
 [XMonad](http://xmonad.org/).  A config file for i3 is included that
 matches the diagram.  The layout is carefully designed so that
@@ -109,9 +109,18 @@ navigational and number keys are consistent between modes.
 
 ## Keyboards
 
-There are a few keyboards that make using five thumb keys (space,
-supers, metas) easier, through keeping the spacebar narrow (three keys
-wide).
+There are a few keyboards that can make life much better.  Three
+features they provide:
+
+1. Longer key travel, enabling two-for-one key presses: the ability to
+   press two keys with a single pinky.  Flat keyboards make this
+   harder
+
+2. The absence of a bottom-left `CTL` key, making a left-pinky barré
+   possible.  Or, you can probably pop that key off of most keyboards!
+
+3. A narrow, three-key wide spacebar, saving the thumbs from reaching
+   too far, enabling the use of five thumb keys (space, supers, metas)
 
 Pictured above (with the green lines) is a Japanese keyboard.  You can
 find them on Amazon for $30-70.  It can be used identically to a US
@@ -140,6 +149,16 @@ I don't see any of these being as good as QWERKey at maintaining
 a home-row position.  My fingers are not able to reach down two rows.
 Furthermore, long-term use of these make it much harder for you to hop
 onto a traditional keyboard.
+
+Ergo keyboards do provide a sweet accidental feature: the two-key
+spacebar!  Since it's so easy to rely on a single thumb for typing a
+space, we get a free key out of the other spacebar.  It can make for adifferent QWERkey
+design.
+
+Keep an eye on this development of the
+[Planck Keyboard Kit](https://www.massdrop.com/buy/planck-mechanical-keyboard).
+It does have six unneeded/unusable keys (bottom-left and -right), but
+seems otherwise perfect and looks like an amazing fit for QWERkey.
 
 
 ## Installation
@@ -203,11 +222,13 @@ simple lesson format.
 
 ## Tips & Tools
 
-Rather than the clever `C-h`, get used to `BSP` again -- it's in a
-decent spot now (though still the farthest QWERkey to reach for!).
-Years ago, I fell in love with `C-h` for backspace in terminals and
-Vim, but it was maddening not having it outside the editor, popping up
-history or who-knows-what.  Now it's reachable, and works everywhere.
+Rather than the clever `C-h`, there's now a decently placed `BSP`
+(though still the farthest QWERkey to reach for!).  Years ago, I fell
+in love with `C-h` for backspace in terminals and Vim, but it was
+maddening not having it outside the editor, popping up history or
+who-knows-what.  Now it's reachable, and works everywhere.  But even
+better is the `Q-` based Backspace, once you get used to it -- a very
+short movement for two pinkies.
 
 Key chords are hard enough to get right with one hand.  Don't spread
 them across two.  Any sequence should be attainable with a single
@@ -222,7 +243,7 @@ right-`CTL` and `x s` rather than do the whole thing left-handed.
 
 Prefer `C-u C-u C-n` to move down 16 lines, rather than `C-16 C-n`.
 Or if you need to use numbers, get used to holding `Q-S-` with just
-the left pinky.  You can even pinky-barre the first part of `C-Q-S-8
+the left pinky.  You can even pinky-barré the first part of `C-Q-S-8
 C-f` and then smoothly lift in the single `C-f`.
 
 There is a Firefox add-on called
