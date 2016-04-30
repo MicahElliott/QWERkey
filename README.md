@@ -189,6 +189,11 @@ your `.xinitrc`:
 
     /path/to/qwerkey.zsh
 
+The default keyboard style is _gearhead_.  You can pass in a specific
+modmap.  E.g., to use the `minila.xmodmap`:
+
+    /path/to/qwerkey.zsh minila
+
 If you want to integrate a tiling window manager (e.g., i3), create a
 symlink to its config:
 
