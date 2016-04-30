@@ -1,0 +1,111 @@
+! -*- mode: conf-xdefaults -*-
+
+clear mod2
+clear mod3
+clear lock
+
+! remove Lock = Caps_Lock
+! keysym Caps_Lock = Control_L
+! add    Control = Control_L
+! keycode 66 = Control_L
+
+remove shift = Shift_R
+
+remove Lock = Caps_Lock
+keycode 66 = Control_L
+add    Control = Control_L
+keycode 23 = Control_L
+
+! Make original ; into a control
+keycode 47 = Control_R
+remove mod4 = Control_R
+add control = Control_R
+
+! Hard-to-reach original Ctrl is CapsLock
+! keycode 37 = Caps_Lock
+
+keycode 23 = Mode_switch
+keycode 37 = Mode_switch
+
+! keysym Pause = colon
+keysym Pause = slash
+keysym Print = bracketleft
+keysym F6 = bracketright
+keysym F7 = colon
+keycode any = Tab
+remove mod4 = Hyper_L
+
+keycode 61 = Shift_R
+add Shift = Shift_R
+
+! Esc becomes another shift for pairing with high CTL
+keycode 49 = Shift_L
+add shift = Shift_L
+
+
+!! GearHead specific
+
+! Compose multibyte dead sequence: Comp ~ n → ñ
+keycode 105 = Multi_key
+
+! gear head super
+keycode 77 = Super_L
+! normal keyboard
+keycode 134 = Super_R
+keycode 135 = Multi_key
+
+keycode 94 = Alt_L
+
+!keycode 47 = slash question backslash
+
+
+
+! Use "mu" to represent "unknown"
+
+!!! QWERTYUIOP
+! dead sym: C-!
+keysym q = q Q exclam
+keysym w = w W at
+keysym e = e E numbersign
+keysym r = r R dollar
+keysym t = t T percent
+keysym y = y Y asciicircum 0
+keysym u = u U ampersand   1
+keysym i = i I asterisk    2
+! *o*r
+keysym o = o O asciitilde  3
+keysym p = p P plus
+!keycode 34 = slash question bracketleft
+! keycode 34 = slash question backslash
+keycode 34 = BackSpace BackSpace BackSpace BackSpace
+keycode 35 = minus
+
+!!! ASDFGHJKL
+! asdf
+keysym a = a A Left
+keysym s = s S Right
+keysym d = d D Up
+keysym f = f F Prior
+keysym g = g G Home
+keysym h = h H less
+! ; looks like a j
+keysym j = j J braceleft 4
+keysym k = k K equal     5
+keysym l = l L bar       6
+keysym apostrophe = apostrophe quotedbl grave
+!keysym semicolon = semicolon colon BackSpace
+
+!!! ZXCVBNM
+keysym z = z Z Insert
+keysym x = x X Delete
+keysym c = c C Down
+keysym v = v V Next
+keysym b = b B End
+keysym n = n N greater
+keysym m = m M braceright            7
+keysym comma = comma less semicolon  8
+keysym period = period greater period 9
+keycode 62 = question backslash backslash
+
+keysym space = space underscore underscore 0
+

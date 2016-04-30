@@ -12,35 +12,34 @@ All of this is accomplished by a few novelties:
  * simple layout tweaks via a small _.xmodmap_ text file
 
  * a new, carefully placed "QRK" modifier key (referred to as `Q-`) at
-   the `Caps Lock` position, which enables a symbolic mode
+   the traditional `Caps Lock` position, which enables a symbolic mode
 
  * an arrangement of left-modifiers that can be pressed in
-   combinations of two or three by forming a comfortable guitar-like
-   pinky barré
+   combinations of two (`C-S`, `C-Q`, `S-Q`) with a single pinky, or
+   three by forming a comfortable guitar-like pinky barré
 
  * extensive use of [xcape](https://github.com/alols/xcape) for
-   doubling modifier keys, greatly reducing the number of keys needed
+   doubling modifier keys ("tapifiers"), greatly reducing the number
+   of keys needed
 
 QWERkey deviates from QWERTY only where necessary.  It is fairly easy
 to pick up, and enables you to hop onto someone else's QWERTY keyboard
 and still feel not completely lost. Hard-to-reach keys will no longer
 be used, but they're still there when you accidentally lunge for them
-(unless you physically remove them from your keyboard like I do).
+(unless you physically remove them from your keyboard like I do with
+some).
 
-Children, programmers, vision impaired, the small-handed, and anyone
-suffering from RSI should give QWERkey a try.  Please provide
-feedback/suggestions in a ticket.
+Children, programmers, vision impaired, the small-handed, efficiency
+nuts, and anyone suffering from RSI should give QWERkey a try.  Please
+provide feedback/suggestions in a ticket.
 
-The goal is that you never actually need to move your hand position to
-reach for the mouse or Home/End/PgUp/PgDn/arrow (and maybe even
-number) keys (but you're still allowed to).  It is tragic to watch a
-youngster bouncing hands all around reaching for BSP et al on a
-traditional keyboard.  It's even very bad for adults.
+The goal is that you never actually need to move your hand position
+off the home row to reach for the mouse or Home/End/PgUp/PgDn/arrow
+(and maybe even number) keys (but you're still allowed to).  It is
+tragic to watch a youngster bouncing hands all around reaching for BSP
+et al on a traditional keyboard.  It's even very bad for adults.
 
-![keymap diagram](https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/qrk-left-high.jpg)
-
-The unused slots are marked with a `µ` (what the cow says when you
-poke it needlessly).
+![keymap diagram](https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/qrk-left-center.jpg)
 
 Here's a feel for how little space your fingers actually need to
 cover.
@@ -63,19 +62,22 @@ Microsoft.  Please let me know if you want to work on a driver.
 
 * "Tapifier" keys (modifier if held, normal if tapped) via xcape
 
-* Peripheral keys (arrows, PgUp/PgDn, Home/End) are reachable
+* Two- and even three-key combos are pressable with a single pinky
+  (though difficult on chicklets)
 
-* Simple `xmodmap` based config -- easy to customize
+* Arrow keys are in
+  [DCAS](https://en.wikipedia.org/wiki/Arrow_keys#DCAS_keys), and other
+  peripheral keys (PgUp/PgDn, Home/End) are reachably clustered together
+
+* Simple `xmodmap` based config — easy to tweak to your liking
 
 * Tuned for symbol key frequency and mnemonics (`Q-p` → `plus`),
   yet standard `!@#$%^&*` remain intact
 
 * Symmetric left and right layout for modifiers Ctrl, Meta/Alt, Shift
-  (though QRK is left- or right-only)
+  (though QRK is left-only)
 
-* Considerations for shared keys with tiling window manager (i3 or other)
-
-* New key chords combos are comfortable
+* Compatible and consistent with tiling window manager (i3 or other)
 
 * Elimination of traditional far-reach right-side keys (Enter,
   Control_R, backslash/bar)
@@ -83,22 +85,22 @@ Microsoft.  Please let me know if you want to work on a driver.
 * Even the number key row can be eliminated (with some practice) by
   the new `Q-S-` num-pad
 
-* Includes cheat sheet and printable stickers
+* Includes cheat sheet usable as printable stickers
 
 * Easier learning curve than other alternative layouts: most original
   keys are still there when you brainfart
 
 * Compose key for special characters
 
-* Comfortable new placement of Enter, Backspace,
-  Controls, and right-Shift!
+* Comfortable new placement of Enter, Backspace, Controls, and
+  right-Shift!
 
 
 ## Tiling Window Managers
 
 The diagram above shows keys (in red) for managing a TWM.  If you're
 someone who cares a lot about layouts and sees value in minimizing
-mouse usage, you need a TWM -- for both speed and comfort.  I like
+mouse usage, you need a TWM — for both speed and comfort.  I like
 [i3](https://i3wm.org/) for its simple textual config format and
 light-weightedness, but have also had good trials with
 [AwesomeWM](https://awesome.naquadah.org/) and
@@ -106,27 +108,29 @@ light-weightedness, but have also had good trials with
 matches the diagram.  The layout is carefully designed so that
 navigational and number keys are consistent between modes.
 
+If you eschew TWMs, QWERkey can still work well for you.  Just ignore
+the red marks on the diagram.
+
 
 ## Keyboards
 
-There are a few keyboards that can make life much better.  Three
-features they provide:
+There are a few keyboards that can make life much better.  Features
+they provide:
 
 1. Longer key travel, enabling two-for-one key presses: the ability to
    press two keys with a single pinky.  Flat keyboards make this
    harder
 
-2. The absence of a bottom-left `CTL` key, making a left-pinky barré
-   possible.  Or, you can probably pop that key off of most keyboards!
-
-3. A narrow, three-key wide spacebar, saving the thumbs from reaching
+2. A narrow, three-key wide spacebar, saving the thumbs from reaching
    too far, enabling the use of five thumb keys (space, supers, metas)
+
+3. Pure clickety-clackety joy
 
 Pictured above (with the green lines) is a Japanese keyboard.  You can
 find them on Amazon for $30-70.  It can be used identically to a US
 keyboard, but its advantage is the narrow spacebar which gives the
 thumbs less required distance to travel.  Going Japanese is totally
-optional (I regularly use a US keyboard with wide spacebar and can
+optional (I've often used a US keyboard with wide spacebar and can
 reach my thumb inward two keys (to SUP) without trouble.)  I've
 tested a couple.  A special `japanese.modmap` will be included soon.
 
@@ -134,7 +138,8 @@ The Happy Hacking Keyboard released a Japanese edition that is of a
 nice, small form factor.  It features
 [_Topre_ keys](https://www.youtube.com/watch?v=lYsAVQLl8mQ), has good
 key action, and can be found on Amazon for $70.  Expect a shipping
-delay.
+delay.  You'll want to find one that does not have `Fn` at the
+bottom-left.
 
 A real cheapo that works is the _Gear Head 89-Key Mini USB_ (find it
 on Amazon).  It feels a bit clunky, but if you only have $12 to spend,
@@ -143,22 +148,33 @@ life-changing 3-key-wide spacebar and easy-to-pop-off-and-exchange
 keys.  It's so slim and small that you can just set it right on top of
 your laptop keyboard.
 
-I'm aware of some of the ergonomic keyboards;
-[here](http://xahlee.info/kbd/ergonomic_keyboards.html) is a survey.
-I don't see any of these being as good as QWERKey at maintaining
-a home-row position.  My fingers are not able to reach down two rows.
-Furthermore, long-term use of these make it much harder for you to hop
-onto a traditional keyboard.
-
-Ergo keyboards do provide a sweet accidental feature: the two-key
-spacebar!  Since it's so easy to rely on a single thumb for typing a
-space, we get a free key out of the other spacebar.  It can make for adifferent QWERkey
-design.
+I most often use the
+[Majestouch Minila](https://www.diatec.co.jp/en/det.php?prod_c=1320)
+with Cherry MX blues.  You can dip-switch the function keys to be
+mappable for QWERkey.  The keys are uniquely laid out in
+semi-ortholinear; a nice compromise.  Amazon usually has the stocked
+at ~$150.  You can find custom keycaps at
+[WASD Keyboards](http://www.wasdkeyboards.com/index.php/products.html)
+Use the provided `minila.modmap` with it.
 
 Keep an eye on this development of the
 [Planck Keyboard Kit](https://www.massdrop.com/buy/planck-mechanical-keyboard).
-It does have six unneeded/unusable keys (bottom-left and -right), but
-seems otherwise perfect and looks like an amazing fit for QWERkey.
+It has only a couple unneeded/unusable keys (bottom-left and -right),
+but seems otherwise a match made in heaven for QWERkey.
+
+I'm aware of many of the ergonomic keyboards;
+[here](http://xahlee.info/kbd/ergonomic_keyboards.html) is a survey.
+I don't see any of these being as good as QWERKey at maintaining a
+home-row position.  My fingers are not able to reach down two rows.
+Furthermore, long-term use of these make it much harder for you to hop
+onto a traditional keyboard.  I'm excited to see what will become of
+[Ergodox](https://www.indiegogo.com/projects/ergodox-ez-an-incredible-mechanical-keyboard#/),
+though.  Lots of potential there, but goes beyond QWERkey's plans.
+
+Ergo keyboards do provide a sweet accidental feature: the two-key
+spacebar!  Since it's so easy to rely on a single thumb for typing a
+space, we get a free key out of the other spacebar.  It can make for a
+different QWERkey design.
 
 
 ## Installation
@@ -176,7 +192,8 @@ your `.xinitrc`:
 If you want to integrate a tiling window manager (e.g., i3), create a
 symlink to its config:
 
-    ln -s /path/to/qwerkey/i3config ~/.i3/config
+    mkdir ~/.i3
+    ln -s /path/to/qwerkey/i3-config ~/.i3/config
 
 (Feel free to contribute a similar AwesomeWM or XMonad config.)
 
@@ -186,9 +203,8 @@ symlink to its config:
 You'll need to re-key your brain and fingers a bit.
 
 For prose, very little has changed from QWERTY: you mostly just need
-to stop reaching so far.  `{}:` have been moved to `QRK` access.
-`/?` are moved up a row.  For this, you get a much better `RET`,
-`SHF`, and `BSP`.
+to stop reaching so far.  `\;=` have been moved to `QRK` access.  For
+this, you get a much better `RET`, `SHF`, and `BSP`.
 
 For coding, most symbols are now accessible consistently through the
 `QRK` modifier.  All combinations of `CTL`, `SHF`, `META/ALT`, and
@@ -222,21 +238,19 @@ simple lesson format.
 
 ## Tips & Tools
 
-Rather than the clever `C-h`, there's now a decently placed `BSP`
-(though still the farthest QWERkey to reach for!).  Years ago, I fell
-in love with `C-h` for backspace in terminals and Vim, but it was
-maddening not having it outside the editor, popping up history or
-who-knows-what.  Now it's reachable, and works everywhere.  But even
-better is the `Q-` based Backspace, once you get used to it -- a very
-short movement for two pinkies.
+Rather than the clever `C-h`, there's now a decently placed `BSP`.
+Years ago, I fell in love with `C-h` for backspace in terminals and
+Vim, but it was maddening not having it outside the editor, popping up
+history or who-knows-what.  Now it's reachable, and works everywhere.
 
 Key chords are hard enough to get right with one hand.  Don't spread
 them across two.  Any sequence should be attainable with a single
-hand -- even `C-Q-S-M-foo`.  The `foo` might be either hand, but the
+hand — even `C-Q-S-M-foo`.  The `foo` might be either hand, but the
 modifiers are all left (in this case).
 
 It may help to think of `QRK`/`Q-` as a _Symbol_ key.  It couldn't be
-called the `S-` key since that's already overloaded by _Shift_ and _Super_.
+called the `S-` key since that's already overloaded by _Shift_ and
+_Super_.
 
 Use the right-`CTL` for left keys.  E.g., in Emacs, save with
 right-`CTL` and `x s` rather than do the whole thing left-handed.
@@ -256,9 +270,13 @@ combos not working, make sure they register as a _KeyPress_ event in
 xev's monitor.
 
 Keyboard stickers will really help you in the early weeks in getting
-through the learning curve.  Just click on and print the PNG at the
-top of this page onto "sticker paper".  Then cut them out with
-scissors and stick 'em on!
+through the learning curve.  You could try clicking on and printing
+the PNG at the top of this page onto "sticker paper".  Then cut them
+out with scissors and stick 'em on!  A label maker with
+clear/transparent paper might also work well.
+
+Colored keycaps will help you remember keys by grouping.  The the WASD
+reference above.
 
 Tactile "keyboard bumps" (search Amazon) are very helpful for
 keeping/finding your position.  I place them on left-CTL, f, j,
@@ -269,9 +287,9 @@ eschews the mouse.  I prefer a tweaked Firefox, but some anti-mouse
 zealots swear by it.
 
 
-## Design Details and Philosophy (for the curious)
+## Design Details, Philosophy, and Trade-offs (for the curious)
 
-I'd prefer mnemonics for all symbols -- imagine `Q-b → !` (_bang_),
+I'd prefer mnemonics for all symbols — imagine `Q-b → !` (_bang_),
 and `Q-e → =` (_equals_).  But we're just too dang used to `!@#$%^&*`
 up top.  So just stick with those.
 
@@ -295,14 +313,10 @@ those combos working on other USB plug-in keyboards.  Hopefully it's
 just my laptop that has trouble.
 
 Even though high-row numeric keys (especially 5, 6, and 7) are rather
-hard to reach, I think it's too hard to make them go away for a `S-Q-`
-num-pad sequence near the home row.  Chords in browsers (`M-3` for
-_third tab_) and in Emacs (`C-20 C-n` for _down 20 lines_) feel
+hard to reach, it's hard to make them go away for a `S-Q-` num-pad
+sequence near the home row.  Chords in browsers (`M-3` for _third
+tab_) and in Emacs (`C-20 C-n` for _down 20 lines_) can feel
 interrupted by reaching for extra modifiers mid-command.
-
-The _ASDZ_ arrows seem weird at first, but they're like _WASD_.  I
-considered _HJKL_ (vi-like), but this wrecked the high-low pairing
-layout.
 
 The num-pad needed to be on the right side for it to be accessible.
 You're chording, say, `Q-S-o` with the left hand to make a `3`.  If
@@ -314,7 +328,9 @@ symbols (`<>{}=;|.~+`) needed to be on the right side, anyway.
 The num-pad follows the telephone layout rather than tradition.  Some
 research suggests that phone is more intuitive/natural.
 
+
 ### Mnemonics
+
 
 `~` → _ocean_: Think of an "ocean wave".  This is an odd one, but it
 does help to think of a symbol as a thing, rather than an action.
@@ -322,7 +338,11 @@ I.e., I tried mentally mapping _pipe_ and _or(tho)_ for pipe-bar and
 or-bar, but _ocean_ was the easiest (probably only) way to remember
 `~`.
 
-`=` _eek_:
+`=` → _eek_: I've heard "equals" spoken as "eek", especially as in
+"eek-eek."
+
+`|` → _straight-l_: Think of this as a tall/narrow `l`.
+
 
 ### Reaching for things
 
@@ -337,13 +357,13 @@ takes you farther down the page.  The same goes for `M-Q->`
 The "Compose" key (AKA `Multi_key`) is a pretty cool way to type
 things like fancy symbols and characters from other languages.  E.g.,
 I'm creating this `π` with `CMP g p` (think "**g**reek **p**i").  And
-an `→` is `CMP - >`.  Since these only take three key presses, it's
+an `→` is `CMP - >`.  Since these only take a few key presses, it's
 probably not worth populating unused QWERkeys (e.g., `Q-S-p → π`) with
-things like the Greek alphabet.  You'll notice that `CMP` is in an
-inconvenient spot, but it's only a (probably rare) tap-key.  You might
-have to do a little setup to get all the characters you're after.  So
-included in this repo is a `.xbindkey` file including Greek symbols.
-Put this in your `$HOME`.
+things like the Greek alphabet.  You'll notice that `CMP` is in a less
+convenient spot, but it's only a (probably rare) tap-key.  You might
+have to do a little setup to get all the characters you're after.  So,
+included in this repo is a `.XCompose` file including Greek symbols.
+Put this in your `$HOME` (via symlink or copy).
 
 I'm considering populating some of the unused keys for the
 [most common](https://www.utexas.edu/learn/html/spchar.html)
@@ -358,9 +378,11 @@ composable combos.
 Browsers and other apps rely frequently on arrow keys and other
 combos involving Home/End/PgUp/PgDn.
 
-`C-PgUp/PgDn` -- tab left -- becomes `C-Q-f/v`
-`M-Left/Right` -- back button -- becomes `M-Q-a/d`
-`M-<N>` -- `N` is a number for which tab to visit -- `Q-S-M-N`
+`C-PgUp/PgDn` — tab left — becomes `C-Q-f/v`
+
+`M-Left/Right` — back button — becomes `M-Q-a/d`
+
+`M-<N>` — `N` is a number for which tab to visit — `Q-S-M-N`
 
 
 ## Alternative Right-QRK Key Layout

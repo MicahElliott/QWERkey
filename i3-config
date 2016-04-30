@@ -1,0 +1,173 @@
+# i3 config file
+#
+# see http://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod Mod4
+
+exec xset +fp /usr/share/fonts/local
+
+# https://wiki.archlinux.org/index.php/Keyboard_configuration_in_Xorg#Using_xset
+#              msdelay rate
+#exec xset r rate 250    60    # super fast keyboard cursor delay and rate!
+exec xset r rate 250    2     # super slow (training to avoid hold-repeat)
+
+exec stty -ixon
+
+focus_follows_mouse yes
+bindsym $mod+Tab workspace back_and_forth
+workspace_auto_back_and_forth yes
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# start dmenu (a program launcher)
+#bindsym $mod+d exec dmenu_run -b -nb red
+# try shellex instead: https://github.com/Merovius/shellex
+# bindsym $mod+m exec shellex -bg brown -fg yellow
+bindsym $mod+n exec shellex -bg brown -fg yellow
+
+# lock screen
+# https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity/
+exec xautolock -time 4 -locker 'i3lock -b -c 0000ff'
+# exec xautolock -time 22 -locker "i3lock -b -i $HOME/art/locked2.png"
+# bindsym Control+Mod1+$mod+l exec i3lock -b -i $HOME/art/locked2.png
+
+# change focus
+bindsym $mod+a focus left
+bindsym $mod+c focus down
+bindsym $mod+s focus up
+bindsym $mod+d focus right
+
+# alternatively, you can use the cursor keys
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+A move left
+bindsym $mod+Shift+C move down
+bindsym $mod+Shift+S move up
+bindsym $mod+Shift+D move right
+
+# alternatively, you can use the cursor keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split horizontal
+
+# split in vertical orientation
+bindsym $mod+v split vertical
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, default)
+# bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+g layout default
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+bindsym $mod+u workspace 1
+bindsym $mod+i workspace 2
+bindsym $mod+o workspace 3
+bindsym $mod+j workspace 4
+bindsym $mod+k workspace 5
+bindsym $mod+l workspace 6
+bindsym $mod+m workspace 7
+bindsym $mod+comma workspace 8
+bindsym $mod+period workspace 9
+bindsym $mod+y workspace 10
+
+bindsym $mod+Shift+U move container to workspace 1
+bindsym $mod+Shift+I move container to workspace 2
+bindsym $mod+Shift+O move container to workspace 3
+bindsym $mod+Shift+J move container to workspace 4
+bindsym $mod+Shift+K move container to workspace 5
+bindsym $mod+Shift+L move container to workspace 6
+bindsym $mod+Shift+M move container to workspace 7
+bindsym $mod+Shift+comma move container to workspace 8
+bindsym $mod+Shift+period move container to workspace 9
+bindsym $mod+Shift+Y move container to workspace 10
+
+# kill focused window
+
+bindsym $mod+Shift+X kill
+
+# reload the configuration file
+bindsym $mod+Shift+E reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+Control+W restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+Control+Q exit
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        bindsym a resize shrink width 3 px or 3 ppt
+        bindsym s resize grow height 3 px or 3 ppt
+        bindsym c resize shrink height 3 px or 3 ppt
+        bindsym d resize grow width 3 px or 3 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym 113 resize shrink width 3 px or 3 ppt
+        bindsym 116 resize grow height 3 px or 3 ppt
+        bindsym 111 resize shrink height 3 px or 3 ppt
+        bindsym 114 resize grow width 3 px or 3 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+
+bindsym $mod+r mode "resize"
+
+bindsym $mod+b border toggle
+# Remove to return to "normal" border.
+new_window pixel 4
+
+# border colors
+client.urgent            #900000 #900000 #ffffff
+
+
+# colors gentoo
+client.focused        #7a5ada     #7a5ada     #ffff00
+client.focused_inactive    #45347b     #45347b     #aaaaaa
+client.unfocused    #333333     #333333     #666666
+client.urgent        #D11931     #D11931     #ffffff
+
+
+# colours arch linux
+# Important that vert/horiz blue is still apparent.
+# green
+client.focused           #99ff33     #99ff33     #0033ff
+# orange
+client.focused_inactive  #ff9900     #ff9900     #0044ff
+# purple
+client.unfocused         #7a5ada     #7a5ada     #ffff00
+# red
+client.urgent            #D11931     #D11931     #777777
+
+# colours freebsd
+#client.focused        #990000     #990000     #ffffff
+#client.focused_inactive    #666666     #666666     #ffffff
+#client.unfocused    #333333     #333333     #ffffff
+#client.urgent        #D11931     #D11931     #ffffff
