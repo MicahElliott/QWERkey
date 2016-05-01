@@ -4,8 +4,12 @@ QWERkey is a _modal_ keyboard layout for X11, optimized for staying on
 or near the home row.  It is suited for programming (using lots of
 symbols easily), particularly with Emacs and Vim, but is also a big
 improvement for typing prose, eliminating hard-to-reach keys.  It is
-even tuned for navigating a web browser with minimal finger
-movement.
+even tuned for fully mouselessly navigating a web browser with minimal
+finger movement.
+
+(Sorry this is so long; typing is just so much fun now!)
+
+![keymap diagram](https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/qrk-left-center.jpg)
 
 All of this is accomplished by a few novelties:
 
@@ -38,8 +42,6 @@ off the home row to reach for the mouse or Home/End/PgUp/PgDn/arrow
 (and maybe even number) keys (but you're still allowed to).  It is
 tragic to watch a youngster bouncing hands all around reaching for BSP
 et al on a traditional keyboard.  It's even very bad for adults.
-
-![keymap diagram](https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/qrk-left-center.jpg)
 
 Here's a feel for how little space your fingers actually need to
 cover.
@@ -122,7 +124,8 @@ they provide:
    harder
 
 2. A narrow, three-key wide spacebar, saving the thumbs from reaching
-   too far, enabling the use of five thumb keys (space, supers, metas)
+   under too far, enabling the use of five thumb keys (space, supers,
+   metas)
 
 3. Pure clickety-clackety joy
 
@@ -145,14 +148,15 @@ A real cheapo that works is the _Gear Head 89-Key Mini USB_ (find it
 on Amazon).  It feels a bit clunky, but if you only have $12 to spend,
 or just want to give QWERkey a whirl, go for this one for its
 life-changing 3-key-wide spacebar and easy-to-pop-off-and-exchange
-keys.  It's so slim and small that you can just set it right on top of
-your laptop keyboard.
+keys.  It's so slim and small that you can just set it stably right on
+top of your laptop keyboard.  I did this for a month and felt quite
+productive with it.  A great one to buy for every kid you know.
 
 I most often use the
 [Majestouch Minila](https://www.diatec.co.jp/en/det.php?prod_c=1320)
 with Cherry MX blues.  You can dip-switch the function keys to be
 mappable for QWERkey.  The keys are uniquely laid out in
-semi-ortholinear; a nice compromise.  Amazon usually has the stocked
+semi-ortholinear; a nice compromise.  Amazon usually has them stocked
 at ~$150.  You can find custom keycaps at
 [WASD Keyboards](http://www.wasdkeyboards.com/index.php/products.html)
 Use the provided `minila.modmap` with it.
@@ -294,6 +298,14 @@ zealots swear by it.
 
 ## Design Details, Philosophy, and Trade-offs (for the curious)
 
+Moving off the home row is awful for staying in a typing/navigating
+flow.  Vim goes a long way to solve this, but still we suffer from
+parts of QWERTY being too spread out.  Emacs relies on arrow keys for
+some things, like window movement and org-mode shortcuts.  Browsers,
+word processors, and other applications rely on navigational keys a
+lot.  So they need to be integrated somehow into the home row.  This
+is what QWERkey accomplishes.
+
 I'd prefer mnemonics for all symbols — imagine `Q-b → !` (_bang_),
 and `Q-e → =` (_equals_).  But we're just too dang used to `!@#$%^&*`
 up top.  So just stick with those.
@@ -336,17 +348,18 @@ research suggests that phone is more intuitive/natural.
 
 ### Mnemonics
 
+Many of the keys are the same as in QWERTY, but a few need slots, the
+only open ones being `opkl,.`
 
-`~` → _ocean_: Think of an "ocean wave".  This is an odd one, but it
+`~` → _**o**cean_: Think of an "ocean wave".  This is an odd one, but it
 does help to think of a symbol as a thing, rather than an action.
-I.e., I tried mentally mapping _pipe_ and _or(tho)_ for pipe-bar and
-or-bar, but _ocean_ was the easiest (probably only) way to remember
-`~`.
 
-`=` → _eek_: I've heard "equals" spoken as "eek", especially as in
-"eek-eek."
+`+` → _**p**lus_: easy peasy.
 
-`|` → _straight-l_: Think of this as a tall/narrow `l`.
+`=` → _ee**k**_: I've heard "equals" spoken as "eek", especially as in
+"eek-eek."  The _k_ is the only consonant and easy to emphasize.
+
+`|` → _straight-**l**_: Think of this as a tall/narrow `l`.
 
 
 ### Reaching for things
