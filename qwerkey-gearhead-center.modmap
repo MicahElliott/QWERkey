@@ -64,10 +64,10 @@ keycode 94 = Alt_L
 
 !!! QWERTYUIOP
 ! dead sym: C-!
-keysym q = q Q exclam
-keysym w = w W at
-keysym e = e E numbersign
-keysym r = r R dollar
+keysym q = q Q exclam      F1
+keysym w = w W at          F2
+keysym e = e E numbersign  F3
+keysym r = r R dollar      F4
 keysym t = t T percent
 keysym y = y Y asciicircum 0
 keysym u = u U ampersand   1
@@ -77,15 +77,15 @@ keysym o = o O asciitilde  3
 keysym p = p P plus
 !keycode 34 = slash question bracketleft
 ! keycode 34 = slash question backslash
-keycode 34 = BackSpace BackSpace BackSpace BackSpace
+keycode 34 = BackSpace BackSpace backslash BackSpace
 keycode 35 = minus
 
 !!! ASDFGHJKL
 ! asdf
-keysym a = a A Left
-keysym s = s S Right
-keysym d = d D Up
-keysym f = f F Prior
+keysym a = a A Left   F5
+keysym s = s S Right  F6
+keysym d = d D Up     F7
+keysym f = f F Prior  F8
 keysym g = g G Home
 keysym h = h H less
 ! ; looks like a j
@@ -96,15 +96,15 @@ keysym apostrophe = apostrophe quotedbl grave
 !keysym semicolon = semicolon colon BackSpace
 
 !!! ZXCVBNM
-keysym z = z Z Insert
-keysym x = x X Delete
-keysym c = c C Down
-keysym v = v V Next
+keysym z = z Z Insert  F9
+keysym x = x X Delete  F10
+keysym c = c C Down    F11
+keysym v = v V Next    F12
 keysym b = b B End
 keysym n = n N greater
 keysym m = m M braceright            7
-keysym comma = comma less semicolon  8
-keysym period = period greater period 9
+keysym comma  = comma less semicolon 8
+keysym period = period greater colon 9
 keycode 62 = question backslash backslash
 
 keysym space = space underscore underscore 0

@@ -1,30 +1,33 @@
-# QWERkey Keyboard Layout
+:# QWERkey Keyboard Layout
 
 QWERkey is a _modal_ keyboard layout for X11, optimized for staying on
-or near the home row.  It is suited for programming (using lots of
+or near the home row.  It is **suited for programming** (using lots of
 symbols easily), particularly with Emacs and Vim, but is also a big
-improvement for typing prose, eliminating hard-to-reach keys.  It is
-even tuned for fully mouselessly navigating a web browser with minimal
-finger movement.
+improvement for typing prose, **eliminating hard-to-reach keys**.  It is
+even tuned for fully mouselessly navigating a web browser with **minimal
+finger movement**.
 
-(Sorry this is so long; typing is just so much fun now!)
+_(Sorry this is so long; typing is just so much fun now!)_
 
 ![keymap diagram](https://raw.githubusercontent.com/MicahElliott/QWERkey/master/art/qrk-left-center.jpg)
 
 All of this is accomplished by a few novelties:
 
- * simple layout tweaks via a small _.xmodmap_ text file
+ * simple layout tweaks via a **small _.xmodmap_ text file**; no
+   firmware hacking needed
 
- * a new, carefully placed "QRK" modifier key (referred to as `Q-`) at
-   the traditional `Caps Lock` position, which enables a symbolic mode
+ * a new, carefully placed **"QRK" modifier key** (referred to as
+   `Q-`) at the traditional `Tab` position, which enables **a
+   symbolic mode**
 
  * an arrangement of left-modifiers that can be pressed in
    combinations of two (`C-S`, `C-Q`, `S-Q`) with a single pinky, or
-   three by forming a comfortable guitar-like pinky barré
+   three (`C-S-Q-`) by forming a comfortable **guitar-like pinky
+   barré**
 
  * extensive use of [xcape](https://github.com/alols/xcape) for
-   doubling modifier keys ("tapifiers"), greatly reducing the number
-   of keys needed
+   putting modifier keys on double duty as **"tapifiers", greatly
+   reducing the number of keys needed**
 
 QWERkey deviates from QWERTY only where necessary.  It is fairly easy
 to pick up, and enables you to hop onto someone else's QWERTY keyboard
@@ -123,11 +126,10 @@ they provide:
    press two keys with a single pinky.  Flat keyboards make this
    harder
 
-2. A narrow, three-key wide spacebar, saving the thumbs from reaching
-   under too far, enabling the use of five thumb keys (space, supers,
-   metas)
+2. A narrow spacebar, saving the thumbs from reaching under too far,
+   enabling the use of five thumb keys (space, supers, metas)
 
-3. Pure clickety-clackety joy
+3. Pure clickety-clackety, tactile joy
 
 Pictured above (with the green lines) is a Japanese keyboard.  You can
 find them on Amazon for $30-70.  It can be used identically to a US
@@ -142,7 +144,7 @@ nice, small form factor.  It features
 [_Topre_ keys](https://www.youtube.com/watch?v=lYsAVQLl8mQ), has good
 key action, and can be found on Amazon for $70.  Expect a shipping
 delay.  You'll want to find one that does not have `Fn` at the
-bottom-left.
+bottom-left.  (Alas, I can't find one now.)
 
 A real cheapo that works is the _Gear Head 89-Key Mini USB_ (find it
 on Amazon).  It feels a bit clunky, but if you only have $12 to spend,
@@ -152,33 +154,47 @@ keys.  It's so slim and small that you can just set it stably right on
 top of your laptop keyboard.  I did this for a month and felt quite
 productive with it.  A great one to buy for every kid you know.
 
-I most often use the
-[Majestouch Minila](https://www.diatec.co.jp/en/det.php?prod_c=1320)
-with Cherry MX blues.  You can dip-switch the function keys to be
-mappable for QWERkey.  The keys are uniquely laid out in
-semi-ortholinear; a nice compromise.  Amazon usually has them stocked
-at ~$150.  You can find custom keycaps at
-[WASD Keyboards](http://www.wasdkeyboards.com/index.php/products.html)
-Use the provided `minila.modmap` with it.
-
 Keep an eye on this development of the
-[Planck Keyboard Kit](https://www.massdrop.com/buy/planck-mechanical-keyboard).
-It has only a couple unneeded/unusable keys (bottom-left and -right),
-but seems otherwise a match made in heaven for QWERkey.
+**[Planck Keyboard Kit](https://www.massdrop.com/buy/planck-mechanical-keyboard)**.
+Truly minimalistic, having only a couple unneeded/unusable keys
+(bottom-left and -right).  Seems a match made in heaven for QWERkey.
+Love the tiny footprint.  Unfortunately, very hard to find, and I
+can't get my hands on one.
+
+I'm about to try out the **[Atreus](https://atreus.technomancy.us/)**.
+Looks like building it will mean a blown weekend, but probably worth
+it.  Almost identical to Planck, but better wrist angles.  No, wait;
+it's missing the outer pinky columns.  So this won't work.
 
 I'm aware of many of the ergonomic keyboards;
 [here](http://xahlee.info/kbd/ergonomic_keyboards.html) is a survey.
 I don't see any of these being as good as QWERKey at maintaining a
 home-row position.  My fingers are not able to reach down two rows.
 Furthermore, long-term use of these make it much harder for you to hop
-onto a traditional keyboard.  I'm excited to see what will become of
+onto a traditional keyboard.
+
+I'm interested to see what will become of
 [Ergodox](https://www.indiegogo.com/projects/ergodox-ez-an-incredible-mechanical-keyboard#/),
-though.  Lots of potential there, but goes beyond QWERkey's plans.
+Lots of potential there, but goes beyond QWERkey's plans.  And, I
+think 12 thumb keys is way too much.  Combine them with xcape and
+you've got up to 24 pieces to juggle on two fingers.  I'm skeptical.
+
+I was excited about the
+[Majestouch Minila](https://www.diatec.co.jp/en/det.php?prod_c=1320)
+with Cherry MX blues.  My hope was that you could dip-switch the
+function keys to be mappable for QWERkey, but it sadly turns them into
+ambiguous spacebars.  So this is a no-go.
+
+The [Truly Ergonomic](https://www.trulyergonomic.com/store/index.php)
+looks interesting, but I've seen so much complaining about their tech
+support and quality that I'm afraid to spend $250 on a dud.  Plus,
+you'd have to ignore most of those middle keys unless you have really
+long index fingers.
 
 Ergo keyboards do provide a sweet accidental feature: the two-key
 spacebar!  Since it's so easy to rely on a single thumb for typing a
 space, we get a free key out of the other spacebar.  It can make for a
-different QWERkey design.
+different QWERkey design.  Most are too big for my tastes, though.
 
 
 ## Installation
@@ -305,6 +321,20 @@ some things, like window movement and org-mode shortcuts.  Browsers,
 word processors, and other applications rely on navigational keys a
 lot.  So they need to be integrated somehow into the home row.  This
 is what QWERkey accomplishes.
+
+You need a non-chicklet keyboard in order to press two keys at once.
+This is critical for things like `C-S-RET`.
+
+Keyboards have certain traditions that will be hard to break.  Some of
+them are even good ones, so why break them?  `CTL` really needs to be
+left of the left pinky.  Emacs and Vim rely on it for nearly
+everything.  Shifts need to be where you expect them
+The most common keys need to remain.  This enables you to type on
+other keyboards.  Sometimes you need to treat a laptop as something
+that sits on your lap!
+
+Some keys need symmetry.  You really benefit from having a `CTL` on
+both sides.
 
 I'd prefer mnemonics for all symbols — imagine `Q-b → !` (_bang_),
 and `Q-e → =` (_equals_).  But we're just too dang used to `!@#$%^&*`
