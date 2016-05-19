@@ -1,4 +1,4 @@
-:# QWERkey Keyboard Layout
+# QWERkey Keyboard Layout
 
 QWERkey is a _modal_ keyboard layout for X11, optimized for staying on
 or near the home row.  It is **suited for programming** (using lots of
@@ -316,29 +316,31 @@ zealots swear by it.
 
 Moving off the home row is awful for staying in a typing/navigating
 flow.  Vim goes a long way to solve this, but still we suffer from
-parts of QWERTY being too spread out.  Emacs relies on arrow keys for
-some things, like window movement and org-mode shortcuts.  Browsers,
-word processors, and other applications rely on navigational keys a
-lot.  So they need to be integrated somehow into the home row.  This
-is what QWERkey accomplishes.
+parts of QWERTY being too spread out.  Emacs relies on arrow keys and
+backspace for some things, like window movement and org-mode
+shortcuts.  Browsers, word processors, and other applications rely on
+navigational keys a lot.  So **peripheral keys need to be integrated
+into the home row**.  This minimized movement is what QWERkey
+accomplishes.
 
-You need a non-chicklet keyboard in order to press two keys at once.
-This is critical for things like `C-S-RET`.
+You need a non-chicklet keyboard in order to **press two keys at once
+with a single finger**.  This is helpful for things like `C-S-RET`.
 
 Keyboards have certain traditions that will be hard to break.  Some of
 them are even good ones, so why break them?  `CTL` really needs to be
 left of the left pinky.  Emacs and Vim rely on it for nearly
-everything.  Shifts need to be where you expect them
-The most common keys need to remain.  This enables you to type on
-other keyboards.  Sometimes you need to treat a laptop as something
-that sits on your lap!
+everything.  Shifts need to be where you expect them to be.  Alt/Meta
+are always next to the spacebar, and are very important for Emacs and
+many other tools.  The most common keys need to remain where they are.
+This **enables you to type on other keyboards**.  Sometimes you need
+to treat a laptop as something that sits on your lap!
 
-Some keys need symmetry.  You really benefit from having a `CTL` on
-both sides.
+**Some keys need symmetry**.  You really benefit from having a `CTL`
+on both sides.
 
 I'd prefer mnemonics for all symbols — imagine `Q-b → !` (_bang_),
-and `Q-e → =` (_equals_).  But we're just too dang used to `!@#$%^&*`
-up top.  So just stick with those.
+and `Q-e → =` (_equals_).  But **we're just so dang used to `!@#$%^&*`
+up top**.  So just stick with those.
 
 Xorg is not capable of adding more than one additional modifier (at
 least not without getting into advanced `setxkbmap` setup).  So we're
@@ -350,9 +352,9 @@ Anyway, I don't see a good place on the right side for another _QRK_
 key.
 
 Choosing a _QRK_ location is quite tricky, since it needs to be a key
-that will not be followed very quickly by another; e.g., `.` is tricky
-since you'll commonly follow it quickly with a `spacebar` before
-removing your finger from the `.`.
+that will not be followed very quickly by another, given xcape
+behavior; e.g., `.` is tricky since you'll commonly follow it quickly
+with a `spacebar` before removing your finger from the `.`.
 
 Xorg does not recognize `C-Q-z`, `C-Q-x`, or `C-Q-q` as an actual key
 press on my laptop keyboard.  This is really lame.  However, I do see
@@ -363,7 +365,8 @@ Even though high-row numeric keys (especially 5, 6, and 7) are rather
 hard to reach, it's hard to make them go away for a `S-Q-` num-pad
 sequence near the home row.  Chords in browsers (`M-3` for _third
 tab_) and in Emacs (`C-20 C-n` for _down 20 lines_) can feel
-interrupted by reaching for extra modifiers mid-command.
+interrupted by reaching for extra modifiers mid-command.  But a
+keyboard like _Planck_ requires it, so I'll try it.
 
 The num-pad needed to be on the right side for it to be accessible.
 You're chording, say, `Q-S-o` with the left hand to make a `3`.  If
@@ -372,8 +375,9 @@ num-pad wound up on the right, the WM's numbers also needed to be
 there.  This forced the arrow keys to the left side.  And the critical
 symbols (`<>{}=;|.~+`) needed to be on the right side, anyway.
 
-The num-pad follows the telephone layout rather than tradition.  Some
-research suggests that phone is more intuitive/natural.
+**The num-pad follows the telephone layout** rather than tradition.
+Some research suggests that phone is more intuitive/natural, and my
+brain certainly fits that.
 
 
 ### Mnemonics
@@ -391,8 +395,12 @@ does help to think of a symbol as a thing, rather than an action.
 
 `|` → _straight-**l**_: Think of this as a tall/narrow `l`.
 
+`;` → _dotted comma_: Think of it as a modified comma
 
-### Reaching for things
+`:` → _dotted period_: Think of it as a modified period
+
+
+### Reach farther, go farther
 
 `Q-End` is a farther reach than `Q-PgDn`.  This makes sense because it
 takes you farther down the page.  The same goes for `M-Q->`
